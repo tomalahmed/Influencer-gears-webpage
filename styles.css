@@ -1,0 +1,137 @@
+/* global styles */
+:root {
+    --primary-color: #E02C6D;
+    --text-color: #3A3A3A;
+    --bg-color: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Shared styles */
+img {
+    width: 100%;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* head */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo h3 {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+nav ul {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+nav ul li a {
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: var(--primary-color);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 0;
+    gap: 50px;
+}
+
+.hero-content {
+    margin-left: 20px;
+    flex: 1;
+}
+
+.hero-content h1 {
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero-content p {
+    font-size: 16px;
+    margin-bottom: 30px;
+    color: #555;
+    max-width: 450px;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 25px;
+    border-radius: 30px;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: background 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #c21b56;
+    transform: translateY(-5px);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-image: url('images/Circle design.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.hero-image img {
+    max-width: 340px;
+    max-height: 314px;
+}
+
