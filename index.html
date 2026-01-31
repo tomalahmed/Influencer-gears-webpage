@@ -5,15 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Influencer Gears</title>
     <link rel="stylesheet" href="./styles.css">
-<!-- fontawesome -->
+    <!-- fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<!-- google fonts -->
+    <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- tailwind -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
+
 <body>
-    
+
     <!-- Header section -->
     <header class="container">
         <div class="logo">
@@ -55,5 +59,232 @@
         <div class="logo-item"><img src="logos/Target.svg" alt="Target"></div>
     </section>
 
+    <!-- Popular Section-->
+    <section class="popular-section container py-12">
+        <h2 class="text-3xl font-bold text-center mb-10">Popular Collection</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- Product 1 -->
+            <div class="bg-white rounded-lg shadow-[0_0_20px_rgba(0,0,0,0.05)] p-4 flex flex-col gap-2">
+                <div class="w-full h-80 bg-gray-50 rounded-lg overflow-hidden flex items-center justify-center mb-2">
+                    <img src="images/tripod.png" alt="Flex Tripod"
+                        class="w-full h-full object-contain p-6 hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="flex flex-col gap-2">
+                    <h3 class="text-2xl font-bold text-[#18191F]">Flex Tripod</h3>
+                    <p class="text-2xl font-normal text-[rgba(0,0,0,0.87)]">$50.48</p>
+                    <div class="flex gap-1 text-[#FB8200] text-sm items-center my-1">
+                        <i class="fas fa-star filled"></i>
+                        <i class="fas fa-star filled"></i>
+                        <i class="fas fa-star filled"></i>
+                        <i class="fas fa-star filled"></i>
+                        <i class="fas fa-star-half-alt filled"></i>
+                        <span class="text-[#5E6366] font-bold ml-2">4.99</span>
+                    </div>
+                    <div>
+                        <p class="text-sm text-[#787885] font-bold tracking-wide">Wordwide shifting available</p>
+                        <p class="text-sm text-[#787885] font-bold tracking-wide">Buyers protection possible!</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="bg-white rounded-lg shadow-[0_0_20px_rgba(0,0,0,0.05)] p-4 flex flex-col gap-2">
+                <div class="w-full h-80 bg-gray-50 rounded-lg overflow-hidden flex items-center justify-center mb-2">
+                    <img src="images/mic.png" alt="Microphone"
+                        class="w-full h-full object-contain p-6 hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="flex flex-col gap-2">
+                    <h3 class="text-2xl font-bold text-[#18191F]">microphone</h3>
+                    <p class="text-2xl font-normal text-[rgba(0,0,0,0.87)]">$120.25</p>
+                    <div class="flex gap-1 text-[#FB8200] text-sm items-center my-1">
+                        <i class="fas fa-star filled"></i>
+                        <i class="fas fa-star filled"></i>
+                        <i class="fas fa-star filled"></i>
+                        <i class="fas fa-star filled"></i>
+                        <i class="fas fa-star filled"></i>
+                        <span class="text-[#5E6366] font-bold ml-2">4.99</span>
+                    </div>
+                    <div>
+                        <p class="text-sm text-[#787885] font-bold tracking-wide">Wordwide shifting available</p>
+                        <p class="text-sm text-[#787885] font-bold tracking-wide">Buyers protection possible!</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="bg-white rounded-lg shadow-[0_0_20px_rgba(0,0,0,0.05)] p-4 flex flex-col gap-2">
+                <div class="w-full h-80 bg-gray-50 rounded-lg overflow-hidden flex items-center justify-center mb-2">
+                    <img src="images/airpod.png" alt="Airbuds"
+                        class="w-full h-full object-contain p-6 hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="flex flex-col gap-2">
+                    <h3 class="text-2xl font-bold text-[#18191F]">Airbuds</h3>
+                    <p class="text-2xl font-normal text-[rgba(0,0,0,0.87)]">$100.00</p>
+                    <div class="flex gap-1 text-[#FB8200] text-sm items-center my-1">
+                        <i class="fas fa-star filled"></i>
+                        <i class="fas fa-star filled"></i>
+                        <i class="fas fa-star filled"></i>
+                        <i class="fas fa-star filled"></i>
+                        <i class="fas fa-star filled"></i>
+                        <span class="text-[#5E6366] font-bold ml-2">4.99</span>
+                    </div>
+                    <div>
+                        <p class="text-sm text-[#787885] font-bold tracking-wide">Wordwide shifting available</p>
+                        <p class="text-sm text-[#787885] font-bold tracking-wide">Buyers protection possible!</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="bg-white rounded-lg shadow-[0_0_20px_rgba(0,0,0,0.05)] p-4 flex flex-col gap-2">
+                <div class="w-full h-80 bg-gray-50 rounded-lg overflow-hidden flex items-center justify-center mb-2">
+                    <img src="images/drone.png" alt="Drone"
+                        class="w-full h-full object-contain p-6 hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="flex flex-col gap-2">
+                    <h3 class="text-2xl font-bold text-[#18191F]">Drone</h3>
+                    <p class="text-2xl font-normal text-[rgba(0,0,0,0.87)]">$980.25</p>
+                    <div class="flex gap-1 text-[#FB8200] text-sm items-center my-1">
+                        <i class="fas fa-star filled"></i>
+                        <i class="fas fa-star filled"></i>
+                        <i class="fas fa-star filled"></i>
+                        <i class="fas fa-star filled"></i>
+                        <i class="fas fa-star filled"></i>
+                        <span class="text-[#5E6366] font-bold ml-2">4.99</span>
+                    </div>
+                    <div>
+                        <p class="text-sm text-[#787885] font-bold tracking-wide">Wordwide shifting available</p>
+                        <p class="text-sm text-[#787885] font-bold tracking-wide">Buyers protection possible!</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="bg-white rounded-lg shadow-[0_0_20px_rgba(0,0,0,0.05)] p-4 flex flex-col gap-2">
+                <div class="w-full h-80 bg-gray-50 rounded-lg overflow-hidden flex items-center justify-center mb-2">
+                    <img src="images/lights.png" alt="Light Setup"
+                        class="w-full h-full object-contain p-6 hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="flex flex-col gap-2">
+                    <h3 class="text-2xl font-bold text-[#18191F]">Light Setup</h3>
+                    <p class="text-2xl font-normal text-[rgba(0,0,0,0.87)]">$1200.00</p>
+                    <div class="flex gap-1 text-[#FB8200] text-sm items-center my-1">
+                        <i class="fas fa-star filled"></i>
+                        <i class="fas fa-star filled"></i>
+                        <i class="fas fa-star filled"></i>
+                        <i class="fas fa-star filled"></i>
+                        <i class="fas fa-star filled"></i>
+                        <span class="text-[#5E6366] font-bold ml-2">4.99</span>
+                    </div>
+                    <div>
+                        <p class="text-sm text-[#787885] font-bold tracking-wide">Wordwide shifting available</p>
+                        <p class="text-sm text-[#787885] font-bold tracking-wide">Buyers protection possible!</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="bg-white rounded-lg shadow-[0_0_20px_rgba(0,0,0,0.05)] p-4 flex flex-col gap-2">
+                <div class="w-full h-80 bg-gray-50 rounded-lg overflow-hidden flex items-center justify-center mb-2">
+                    <img src="images/setup.png" alt="Photoshoot set"
+                        class="w-full h-full object-contain p-6 hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="flex flex-col gap-2">
+                    <h3 class="text-2xl font-bold text-[#18191F]">Photoshoot set</h3>
+                    <p class="text-2xl font-normal text-[rgba(0,0,0,0.87)]">$820.40</p>
+                    <div class="flex gap-1 text-[#FB8200] text-sm items-center my-1">
+                        <i class="fas fa-star filled"></i>
+                        <i class="fas fa-star filled"></i>
+                        <i class="fas fa-star filled"></i>
+                        <i class="fas fa-star filled"></i>
+                        <i class="fas fa-star filled"></i>
+                        <span class="text-[#5E6366] font-bold ml-2">4.99</span>
+                    </div>
+                    <div>
+                        <p class="text-sm text-[#787885] font-bold tracking-wide">Wordwide shifting available</p>
+                        <p class="text-sm text-[#787885] font-bold tracking-wide">Buyers protection possible!</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 7 -->
+            <div class="bg-white rounded-lg shadow-[0_0_20px_rgba(0,0,0,0.05)] p-4 flex flex-col gap-2">
+                <div class="w-full h-80 bg-gray-50 rounded-lg overflow-hidden flex items-center justify-center mb-2">
+                    <img src="images/camera.png" alt="Vlogging Camera"
+                        class="w-full h-full object-contain p-6 hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="flex flex-col gap-2">
+                    <h3 class="text-2xl font-bold text-[#18191F]">Vlogging Camera</h3>
+                    <p class="text-2xl font-normal text-[rgba(0,0,0,0.87)]">$1800.80</p>
+                    <div class="flex gap-1 text-[#FB8200] text-sm items-center my-1">
+                        <i class="fas fa-star filled"></i>
+                        <i class="fas fa-star filled"></i>
+                        <i class="fas fa-star filled"></i>
+                        <i class="fas fa-star filled"></i>
+                        <i class="fas fa-star filled"></i>
+                        <span class="text-[#5E6366] font-bold ml-2">4.99</span>
+                    </div>
+                    <div>
+                        <p class="text-sm text-[#787885] font-bold tracking-wide">Wordwide shifting available</p>
+                        <p class="text-sm text-[#787885] font-bold tracking-wide">Buyers protection possible!</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 8 -->
+            <div class="bg-white rounded-lg shadow-[0_0_20px_rgba(0,0,0,0.05)] p-4 flex flex-col gap-2">
+                <div class="w-full h-80 bg-gray-50 rounded-lg overflow-hidden flex items-center justify-center mb-2">
+                    <img src="images/single-light.png" alt="Green Screen"
+                        class="w-full h-full object-contain p-6 hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="flex flex-col gap-2">
+                    <h3 class="text-2xl font-bold text-[#18191F]">Green Screen</h3>
+                    <p class="text-2xl font-normal text-[rgba(0,0,0,0.87)]">$25.48</p>
+                    <div class="flex gap-1 text-[#FB8200] text-sm items-center my-1">
+                        <i class="fas fa-star filled"></i>
+                        <i class="fas fa-star filled"></i>
+                        <i class="fas fa-star filled"></i>
+                        <i class="fas fa-star filled"></i>
+                        <i class="fas fa-star filled"></i>
+                        <span class="text-[#5E6366] font-bold ml-2">4.99</span>
+                    </div>
+                    <div>
+                        <p class="text-sm text-[#787885] font-bold tracking-wide">Wordwide shifting available</p>
+                        <p class="text-sm text-[#787885] font-bold tracking-wide">Buyers protection possible!</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 9 -->
+            <div class="bg-white rounded-lg shadow-[0_0_20px_rgba(0,0,0,0.05)] p-4 flex flex-col gap-2">
+                <div class="w-full h-80 bg-gray-50 rounded-lg overflow-hidden flex items-center justify-center mb-2">
+                    <img src="images/action.png" alt="Action Camera"
+                        class="w-full h-full object-contain p-6 hover:scale-110 transition-transform duration-300">
+                </div>
+                <div class="flex flex-col gap-2">
+                    <h3 class="text-2xl font-bold text-[#18191F]">Action Camera</h3>
+                    <p class="text-2xl font-normal text-[rgba(0,0,0,0.87)]">$380.00</p>
+                    <div class="flex gap-1 text-[#FB8200] text-sm items-center my-1">
+                        <i class="fas fa-star filled"></i>
+                        <i class="fas fa-star filled"></i>
+                        <i class="fas fa-star filled"></i>
+                        <i class="fas fa-star filled"></i>
+                        <i class="fas fa-star filled"></i>
+                        <span class="text-[#5E6366] font-bold ml-2">4.99</span>
+                    </div>
+                    <div>
+                        <p class="text-sm text-[#787885] font-bold tracking-wide">Wordwide shifting available</p>
+                        <p class="text-sm text-[#787885] font-bold tracking-wide">Buyers protection possible!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="see-more">
+            <a href="#" class="btn">See More <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </section>
 </body>
+
 </html>
